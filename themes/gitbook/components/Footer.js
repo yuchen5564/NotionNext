@@ -23,21 +23,6 @@ const Footer = ({ siteInfo }) => {
         台科新生懶人包 For Freshman in NTUST © {`${copyrightDate}`}
       </div>
 
-      {siteConfig('BEI_AN') && (
-        <>
-          <i className='fas fa-shield-alt' />{' '}
-          <br />
-        </>
-      )}
-
-      <span className='hidden busuanzi_container_site_pv'>
-        <i className='fas fa-eye' />
-        <span className='px-1 busuanzi_value_site_pv'> </span>{' '}
-      </span>
-      <span className='pl-2 hidden busuanzi_container_site_uv'>
-        <i className='fas fa-users' />{' '}
-        <span className='px-1 busuanzi_value_site_uv'> </span>{' '}
-      </span>
       {/* SEO title */}
       <h1 className='pt-1 hidden'>{siteConfig('TITLE')}</h1>
     </footer>
