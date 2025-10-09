@@ -17,20 +17,9 @@ const Footer = ({ siteInfo }) => {
     <footer className='z-20 border p-2 rounded-lg bg:white dark:border-black dark:bg-hexo-black-gray justify-center text-center w-full text-sm relative'>
       <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c6e712a9250f4f8785e0644a46b3159c"}'></script>
 
-      <SocialButton />
-
       <div className='flex justify-center'>
         台科新生懶人包 For Freshman in NTUST © {`${copyrightDate}`}
       </div>
-
-      <span className='hidden busuanzi_container_site_pv'>
-        <i className='fas fa-eye' />
-        <span className='px-1 busuanzi_value_site_pv'> </span>{' '}
-      </span>
-      <span className='pl-2 hidden busuanzi_container_site_uv'>
-        <i className='fas fa-users' />{' '}
-        <span className='px-1 busuanzi_value_site_uv'> </span>{' '}
-      </span>
 
       {/* SEO title */}
       <h1 className='pt-1 hidden'>{siteConfig('TITLE')}</h1>
