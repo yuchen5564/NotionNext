@@ -10,23 +10,16 @@ export const Footer = props => {
   return (
     <footer
       className={`z-10 dark:bg-black bg-white p-2 rounded-lg relative mt-6 flex-shrink-0 mb-4 w-full shadow dark:text-gray-200 `}>
+      <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c6e712a9250f4f8785e0644a46b3159c"}'></script>
+
       {/* <hr className='my-2 border-black dark:border-gray-100' /> */}
       {/* 页面底部 */}
       <div className='w-full flex justify-between p-4 '>
         <p>
-          © {siteConfig('TITLE')} {copyrightDate}
+          台科新生懶人包 For Freshman in NTUST © {`${copyrightDate}`}
         </p>
         <p>{siteConfig('DESCRIPTION')}</p>
 
-        <span className='dark:text-gray-200 no-underline ml-4'>
-          Powered by
-          <a
-            href='https://github.com/tangly1024/NotionNext'
-            className=' hover:underline'>
-            {' '}
-            NotionNext {siteConfig('VERSION')}{' '}
-          </a>
-        </span>
       </div>
     </footer>
   )
